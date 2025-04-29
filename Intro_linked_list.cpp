@@ -77,7 +77,7 @@ Node* convert_into_linked_list(vector<int> &arr){
     Node* head = new Node(arr[0]);
     Node* mover = head;
     int n = arr.size();
-    for(int i=0; i<n; i++){
+    for(int i=1; i<n; i++){
         Node* tamp = new Node(arr[i]);
         mover->next = tamp;
         mover = tamp;
